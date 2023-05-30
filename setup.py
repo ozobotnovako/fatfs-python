@@ -57,9 +57,9 @@ setup(
     url="https://github.com/krakonos/fatfs-python",
     #packages=['pyfatfs', 'pyfatfs.tests'],
     packages=find_packages(),
-    install_requires=['cython'],
+    setup_requires=['cython', "wheel"],
     zip_safe=False,
-    python_requires='>=3.6', #TODO: Actual version?
+    python_requires='>=3.8',
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
